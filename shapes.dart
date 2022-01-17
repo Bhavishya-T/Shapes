@@ -56,7 +56,7 @@ main() {
       print('Enter width');
       b = int.parse(stdin.readLineSync()!);
       obj.area(a, b);
-    } else {
+    } else if (number == 3) {
       print('Enter first side');
       a = int.parse(stdin.readLineSync()!);
       print('Enter second side');
@@ -64,6 +64,8 @@ main() {
       print('Enter third side');
       c = int.parse(stdin.readLineSync()!);
       obj.area(a, b, c);
+    } else {
+      break;
     }
   }
 }
